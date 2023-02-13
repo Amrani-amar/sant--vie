@@ -1,0 +1,95 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #8b7979;
+}
+
+.container {
+  max-width: 1000px;
+  margin-top: 50px;
+  
+  background-color: #d8eef8;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse:collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #bca5d6;
+  font-weight: bold;
+}
+
+@media (max-width: 467px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Date/Heure";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Nom";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Prénom";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Sexe";
+  }
+
+  td:nth-of-type(5):before {
+    content: "Age";
+  }
+
+  td:nth-of-type(6):before {
+    content: "Type de visite";
+  }
+}
+
+.azer {
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+}
